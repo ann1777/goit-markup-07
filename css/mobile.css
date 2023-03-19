@@ -1,0 +1,72 @@
+/**-----CONTAINER-------*/
+.container {
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+
+/**----HERO SECTION-------*/
+.hero {
+  margin: 0 auto;
+  padding-top: 112px;
+  padding-bottom: 112px;
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../img/group-people-working-website-template.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.hero-title {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 72px;
+  color: var(--main-heading-color);
+  font-size: 36px;
+  line-height: 1.1;
+  text-align: center;
+}
+
+.button {
+  border: none;
+  border-radius: 4px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  color: var(--main-heading-color);
+  background-color: var(--accent-color);
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  text-decoration: none;
+  letter-spacing: 0.04em;
+  cursor: pointer;
+}
+
+.main-button {
+  min-width: 169px;
+  height: 56px;
+  display: block;
+  margin: 0 auto;
+  padding: 16px 32px;
+}
+.button:hover {
+  color: var(--main-heading-color);
+  background-color: var(--primary-button-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+.button:focus {
+  color: var(--main-heading-color);
+  background-color: var(--accent-color);
+  box-shadow: inset 0px 0px 12px rgba(0, 0, 0, 0.05);
+}
+
+@media screen and (min-width: 480px) {
+  .container {
+    max-width: 428px;
+  }
+}
