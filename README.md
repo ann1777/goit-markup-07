@@ -6,7 +6,7 @@
 ### Project requirements
 «A1» The horizontal scroll bar does not appear when viewing the page on any device with a width of 320px or more.
 
-«A2» Скрипт мобільного меню підключений в HTML окремим файлом mobile-menu.js.
+«A2» The mobile menu script is connected to HTML by a separate mobile-menu.js file.
 
 «A3» A complete example of creating a mobile menu with an already written script, disassemble it in the workshop.
 
