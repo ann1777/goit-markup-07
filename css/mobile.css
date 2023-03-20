@@ -265,9 +265,8 @@ header {
   background-color: transparent;
   border: none;
 }
-.mob-menu-open-icon {
+.mob-menu-open-icn {
   stroke: var(--svg-btn-fill);
-  /* var(--secondary-text-color); */
 }
 .mob-menu-close-btn {
   display: flex;
@@ -285,7 +284,7 @@ header {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.icn-modal-close {
+.mob-menu-close-icon {
   fill: var(--svg-btn-fill);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
