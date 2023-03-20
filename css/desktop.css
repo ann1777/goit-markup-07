@@ -8,14 +8,35 @@
   }
 
   /**----HERO SECTION-------*/
-  .hero {
-    padding-top: 188px;
-    padding-bottom: 188px;
-    min-width: 1440px;
+  .hero-img {
+    margin: 0 auto;
+    max-width: var(--page-width);
+    padding: var(--hero-container-gap) 0;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: linear-gradient(
+        to right,
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(".././img/group-people-working-website-template.jpg");
   }
+
   .hero-title {
     margin-bottom: 48px;
     max-width: 496px;
     font-size: 56px;
   }
 }
+/* @media (min-device-pixel-ratio: 2), */
+/* (min-resolution: 192dpi), */
+/* (min-resolution: 2dppx) { */
+/* .hero-img { */
+/* background-image: linear-gradient( */
+/* rgba(46, 47, 66, 0.7), */
+/* rgba(46, 47, 66, 0.7) */
+/* ), */
+/* url(".././img/hero-desktop@2x-min.jpg"); */
+/* } */
+/* } */

@@ -39,11 +39,66 @@
                     <li class="item"><a href="tel:+110001111111" class="address link">+11(000)111-11-11</a></li>
                 </ul>
             </address>
-            <button class="menu-open-btn" data-menu-open type="button">
-                <svg class="menu-open-icn" width="32" height="22">
-                    <use href="./img/symbol-defs.svg#icn-menu-mob"></use>
+            <button class="mob-menu-open-btn" data-menu-open type="button">
+                <svg class="mob-menu-open-icn" width="32" height="22">
+                    <use href="./img/symbol-defs.svg#icn-menu-mob-open"></use>
                 </svg>
             </button>
+        </div>
+        <div class="mob-menu" data-menu>
+            <button class="mob-menu-close-btn" data-menu-close type="button">
+                <svg class="mob-menu-close-icon" width="20" height="20">
+                    <use href="./img/symbol-defs.svg#icn-modal-close"></use>
+                </svg>
+            </button>
+            <nav>
+                <ul class="mob-menu-list">
+                    <li><a href="./index.html" class="mob-menu-item link">Studio</a></li>
+                    <li><a href="./portfolio.html" class="mob-menu-item link">Portfolio</a></li>
+                    <li><a href="./index.html" class="mob-menu-item link active">Contacts</a></li>
+                </ul>
+            </nav>
+
+            <div class="mob-menu-bottom">
+                <address class="mob-menu-address">
+                    <ul class="mob-menu-auth-nav">
+                        <li class="mob-tel"><a href="tel:+11(000)1111111" class=" link active">+11(000)1111111</a></li>
+                        <li class="mob-mail"><a href="mailto:info@devstudio.com" class="link">info@devstudio.com</a>
+                        </li>
+                    </ul>
+                </address>
+
+                <ul class="mob-menu-items list">
+                    <li class="mob-menu-item">
+                        <a href="#" class="mob-menu-link link">
+                            <svg class="mob-menu-icn" width="16" height="16">
+                                <use href="./img/symbol-defs.svg#icon-insta-icn"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="mob-menu-item">
+                        <a href="#" class="mob-menu-link link">
+                            <svg class="mob-menu-icn" width="16" height="16">
+                                <use href="./img/symbol-defs.svg#icon-twitter-icn"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="mob-menu-item">
+                        <a href="#" class="mob-menu-link link">
+                            <svg class="mob-menu-icn" width="16" height="16">
+                                <use href="./img/symbol-defs.svg#icon-facebook-icn"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="mob-menu-item">
+                        <a href="#" class="mob-menu-link link">
+                            <svg class="mob-menu-icn" width="16" height="16">
+                                <use href="./img/symbol-defs.svg#icon-linkedin-icn"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </header>
 
@@ -152,7 +207,8 @@
                                     <a href="#" class="team-media insta-icn">
                                         <svg class="media-icon" width="16" height="16">
                                             <use href="./img/symbol-defs.svg#icon-insta-icn"></use>
-                                        </svg></a>
+                                        </svg>
+                                    </a>
                                 </li>
                                 <li class="media-item">
                                     <a href="#" class="team-media tw-icon">
@@ -456,6 +512,7 @@
         </div>
     </div>
     <script src="./js/hero-modal.js"></script>
+    <script src="./js/menu.js"></script>
 </body>
 
 </html>
