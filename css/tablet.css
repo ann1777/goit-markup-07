@@ -1,12 +1,233 @@
+@media screen and (min-width: 768px) and (max-width: 1199px) and (min-device-pixel-ratio: 2) and (min-width: 768px),
+  screen and (min-width: 768px) and (min-resolution: 192dpi) and (min-width: 768px),
+  screen and (min-width: 768px) and (min-resolution: 2dppx) and (min-width: 768px) {
+  .hero-img {
+    padding-bottom: 108px;
+    background-image: linear-gradient(
+        to right,
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(".././img/hero-tablet@2x-min.jpg");
+  }
+}
+
 @media screen and (min-width: 768px) {
   .container {
     max-width: 768px;
   }
-  .hero {
-    padding-bottom: 108px;
+
+  /**-------------MAIN PAGE--------------*/
+  /**--------TOP LINE SECTION-------*/
+
+  .header {
+    padding-bottom: 10px;
   }
+
+  .header-container {
+    display: flex;
+    width: 766px;
+    padding: 0 15px;
+    margin: auto;
+  }
+
+  .page-nav {
+    display: flex;
+    align-items: center;
+  }
+
+  .menu-nav,
+  .nav-link {
+    display: flex;
+    gap: 40px;
+  }
+
+  .contacts {
+    margin-left: auto;
+  }
+
+  .contacts-nav {
+    display: block;
+    margin-left: auto;
+  }
+
+  .address {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.33;
+    letter-spacing: 0.04em;
+  }
+
+  .nav-link {
+    position: relative;
+    display: block;
+    padding: 24px 0;
+
+    font-weight: 500;
+    text-decoration: none;
+    color: var(--title-text-color);
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .nav-link.active::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 4px;
+    bottom: -1px;
+    left: 0;
+    position: absolute;
+    background: var(--btn-active-color);
+    border-radius: 2px;
+  }
+
+  .nav-link:hover {
+    color: var(--btn-active-color);
+  }
+
+  .nav-link:focus {
+    color: var(--btn-active-color);
+  }
+  .nav-link.active {
+    color: var(--btn-active-color);
+  }
+
+  .address {
+    /* display: block; */
+    color: var(--text-color);
+    text-decoration: none;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .address.link:hover {
+    color: var(--btn-active-color);
+  }
+
+  .address.link:focus {
+    color: var(--btn-active-color);
+  }
+
+  .mob-menu-open-btn {
+    display: none;
+  }
+
+  /**----HERO SECTION-------*/
+
   .hero-title {
     margin-bottom: 40px;
     font-size: 56px;
+  }
+
+  .hero-msg {
+    margin-bottom: 40px;
+  }
+
+  /**-------FEATURES SECTION--------*/
+
+  .features-list {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 72px 24px;
+  }
+
+  .feature-item {
+    width: 356px;
+  }
+
+  .feature-title {
+    text-align: left;
+    margin-bottom: 8px;
+
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    color: var(--title-text-color);
+  }
+
+  /**----------- OUR TEAM SECTION------------- */
+
+  .team-container {
+    padding-top: 96px;
+    padding-left: 108px;
+  }
+
+  .team-list {
+    gap: 72px 24px;
+  }
+
+  .team-item {
+    width: 264px;
+  }
+
+  .team-card .section-subtitle {
+    text-align: center;
+  }
+
+  .teamplayers-name {
+    margin-bottom: 8px;
+
+    color: var(--title-text-color);
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    text-align: center;
+  }
+
+  /**-------------CUSTOMERS SECTION--------------*/
+
+  .customers-logos {
+    gap: 72px 24px;
+  }
+
+  .customers-card {
+    width: 168px;
+    flex-basis: auto;
+  }
+
+  /**------------------FOOTER SECTION--------------- */
+
+  .footer {
+    text-align: left;
+  }
+
+  .footer-container {
+    justify-content: flex-start;
+    align-items: baseline;
+    flex-direction: row;
+
+    padding-left: 108px;
+    gap: 24px;
+  }
+
+  .logo-web {
+    text-align: left;
+  }
+
+  .footer-subscribe-box {
+    margin-top: 72px;
+    width: 453px;
+  }
+
+  .footer-form {
+    flex-direction: row;
+    align-items: baseline;
+    margin-left: 0 auto;
+  }
+
+  .footer-form-input {
+    width: 264px;
+  }
+
+  .footer-form-button {
+    margin-left: 24px;
+  }
+
+  /**-------MODAL WINDOW------------*/
+
+  .modal {
+    width: 408px;
+    min-height: 586px;
   }
 }
