@@ -234,6 +234,7 @@ body {
   font-family: var(--secondary-font-family);
   font-size: var(--logo-font-size);
   line-height: var(--header-logo-line-height);
+  font-weight: var(--logo-font-weight);
   letter-spacing: 0.03em;
   text-transform: uppercase;
   text-decoration: none;
@@ -242,6 +243,12 @@ body {
 
 .logo-studio {
   margin-right: 76px;
+  font-weight: var(--logo-font-weight);
+  font-family: var(--secondary-font-family);
+  font-size: var(--logo-font-size);
+  line-height: var(--header-logo-line-height);
+  text-transform: uppercase;
+  text-decoration: none;
   color: var(--title-text-color);
 }
 
@@ -802,7 +809,6 @@ body {
   margin-left: 4px;
 }
 
-.3
 
 .submit-modal-btn {
   display: block;

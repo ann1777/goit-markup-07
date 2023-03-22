@@ -49,6 +49,7 @@
   --text-font-weight: 400;
   --header3-font-weight: 500;
   --header1-font-weight: 700;
+  --logo-font-weight: 800;
 
   --header1-line-height: 1.07;
   --header2-line-height: 1.11;
@@ -201,10 +202,10 @@ header {
 
 /** Top line Menu nav */
 .menu-nav.list {
-  display: flex;
+  /* display: flex; */
   margin-left: 76px;
   padding-left: 0px;
-  gap: 40px;
+  /* gap: 40px; */
 }
 
 .nav {
