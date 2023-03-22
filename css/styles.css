@@ -734,7 +734,6 @@ header {
 
 .team-media:is(:hover, :focus) {
   background-color: var(--btn-active-color);
-  border-color: var(--btn-active-color);
   outline: none;
 }
 
@@ -918,7 +917,7 @@ svg.footer-form-icon {
   position: relative;
   overflow: hidden;
   color: var(--primary-white-color);
-  background-color: var(var(--btn-active-color));
+  background-color: var(--btn-active-color);
   background-size: cover;
 }
 

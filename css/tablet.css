@@ -27,13 +27,19 @@
   .header-container {
     display: flex;
     width: 766px;
-    padding: 0 15px;
+    /* padding: 0 15px; */
     margin: auto;
   }
 
   .page-nav {
     display: flex;
     align-items: center;
+  }
+
+  .menu-nav.list,
+  .nav,
+  .contacts-nav {
+    display: flex;
   }
 
   .menu-nav,
@@ -51,7 +57,8 @@
     margin-left: auto;
   }
 
-  .address {
+  .address.link {
+    padding-top: 0;
     font-weight: 400;
     font-size: 12px;
     line-height: 1.33;
