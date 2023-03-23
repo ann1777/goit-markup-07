@@ -1051,10 +1051,16 @@ body {
   border: 1px solid var(--btn-active-color);
 }
 
-/* .customers-icon { */
-  /* width: 168px; */
-  /* height: 88px; */
-/* } */
+/**CUSTOMERS SECTION ICONS*/
+.customers-item > .icon {
+  width: 168px;
+  height: 88px;
+  order: 0;
+  flex-grow: 0;
+  fill: var(--grey-fill-color);
+
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 
 svg.customers-icon {
   width: 104px; 
@@ -1063,6 +1069,7 @@ svg.customers-icon {
 
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 
 .customers-item:hover .customers-icon {
   fill: var(--btn-active-color);

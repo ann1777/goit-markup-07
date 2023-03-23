@@ -527,17 +527,20 @@
   }
 
   /**-------------CUSTOMERS SECTION--------------*/
-  .customers {
-    margin-bottom: 4px;
+  .customers-logos.list {
+    justify-content: space-between;
+    flex-wrap: nowrap;
   }
 
   .customers-container {
-    padding: 120px 0;
-    width: 1158px;
+    padding-top: 120px;
+    padding-bottom: 120px;
   }
 
   .customers-card {
-    width: calc((100% - 120px) / 6);
+    flex-basis: calc((100% - 24px) / 4);
+
+    height: 88px;
   }
 
   /**------------------FOOTER SECTION--------------- */
