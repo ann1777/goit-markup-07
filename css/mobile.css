@@ -1011,23 +1011,19 @@ body {
 
 /**-------------CUSTOMERS SECTION--------------*/
 
-.container.customers-container {
-    padding: 96px auto;
+.customers .customers-container {
+  padding-top: 96px;
+  padding-bottom: 96px;
   }
 
 .customers-logos.list {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 16px;
+  gap: 72px 16px;
 }
 
 .customers-items {
-  flex-basis: calc((100% - 16px) / 2);
-  height: 88px;
-}
-
-.customers-card {
   flex-basis: calc((100% - 16px) / 2);
   height: 88px;
 }

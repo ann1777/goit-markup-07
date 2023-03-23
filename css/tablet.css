@@ -237,18 +237,13 @@
 
   /**-------------CUSTOMERS SECTION--------------*/
 
-  .customers-logos.list {
-    gap: 72px 24px;
-  }
-
   .customers-card {
-    align-items: center;
-    flex-basis: calc((100% - 16px) / 2);
     width: 168px;
     height: 88px;
+    flex-basis: auto;
   }
 
-  .customers-container {
+  .customers .customers-container {
     padding: 96px 108px;
   }
 
