@@ -915,7 +915,7 @@ color: var(--btn-active-color);
   position: relative;
   overflow: hidden;
   color: var(--primary-white-color);
-  background-color: var(--btn-active-color);
+  background-color: var(--accent-text-color);
   background-size: cover;
 }
 
@@ -934,7 +934,7 @@ color: var(--btn-active-color);
   color: var(--white-title-text-color);
   letter-spacing: 0.02em;
   line-height: 1.5;
-  background-color: var(--btn-active-color);
+  background-color: var(--accent-text-color);
 }
 
 .card-item:hover .portfolio-cardhover-text {
