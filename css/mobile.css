@@ -220,7 +220,7 @@ body {
 
 /**--------TOP LINE SECTION-------*/
 .header {
-  padding: 24px 0;
+  padding: 24px 16px;
   border-bottom: 1px solid var(--white-text-color);
   overflow-y: hidden;
 }
@@ -242,7 +242,7 @@ body {
 }
 
 .logo-studio {
-  margin-right: 76px;
+  /* margin-right: 16px; */
   font-weight: var(--logo-font-weight);
   font-family: var(--secondary-font-family);
   font-size: var(--logo-font-size);
@@ -852,32 +852,33 @@ body {
 
 .feature-item {
   width: 100%;
-  /* max-width: var(--feature-width); */
 }
 
 .feature-item:not(:last-child) {
   margin-bottom: 74px;
 }
 
-.feature-icn-box {
-  display: none;
-}
+.feature-title {
+    margin: 8px 0;
+    font-weight: var(--header1-font-weight);
+    font-size: var(--header2-font-size);
+    line-height: var(--header2-line-height);
+    letter-spacing: 0.02em;
+  }
 
 .feature-content {
   color: var(--text-color);
-  line-height: 1.5;
+  font-weight: var(--header3-font-weight);
+  font-size: var(--regular-font-size);
+  line-height: var(--feature-widthtext-line-height);
+  letter-spacing: 0.02em;
   letter-spacing: 0.02em;
 }
 
 /**FEATURE SECTION ICONS*/
+
 .feature-icn-box {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 112px;
-  margin-bottom: 8px;
-  background-color: var(--white-title-text-color);
-  border-radius: 4px;
+  display: none;
 }
 
 .feature-icn {
@@ -887,20 +888,18 @@ body {
 
 /**--------WHAT ARE WE DOING SECTION----------*/
 .information {
-  display: flex;
-}
-
-.information-list {
-  display: flex;
-  gap: var(--items-gap);
+  display: none;
 }
 
 /**----------- OUR TEAM SECTION------------- */
 
-.team {
-  padding-top: 120px;
-  padding-bottom: 120px;
+.team-container {
+    padding: 120px 0;
 }
+
+.team .container {
+    margin: auto;
+  }
 
 .team-items {
   padding: 32px 0;
@@ -908,7 +907,7 @@ body {
 }
 
 .team-item {
-  /* width: 100%; */
+  width: 100%;
   background: var(--primary-white-color);
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
@@ -931,7 +930,6 @@ body {
   line-height: 1.5;
   color: var(--text-color);
 }
-
 
 .team-list {
   display: flex;
@@ -1014,9 +1012,9 @@ body {
 
 /**-------------CUSTOMERS SECTION--------------*/
 
-.customers {
-  padding: 96px 0;
-}
+.container.customers-container {
+    padding: 96px auto;
+  }
 
 .customers-logos.list {
   display: flex;
@@ -1082,6 +1080,15 @@ svg.customers-icon {
   align-items: baseline;
 }
 
+.footer-first-part {
+  width: 268px;
+}
+
+.footer-logo-box,
+.footer-media-box {
+  padding-bottom: 72px;
+}
+
 .footer-content {
   text-align: left;
   width: var(--footer-content-width);
@@ -1116,13 +1123,22 @@ svg.customers-icon {
   align-items: center;
 }
 
+.footer-second-part {
+  width: 100%;
+}
+
+.footer-subscribe-header {
+  margin-bottom: 16px;
+}
+
 .footer-form {
   display: flex;
   align-items: center;
 }
 
 .footer-form-input {
-  width: 264px;
+  width: 100%;
+  padding-bottom: 16px;
 }
 
 .footer-media-icns {

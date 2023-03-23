@@ -30,6 +30,7 @@
 
   .header {
     padding-bottom: 0px;
+    padding-top: 0px;
   }
 
   .header-container {
@@ -47,8 +48,6 @@
   .nav {
     display: block;
     position: relative;
-    /* padding-top: var(--padding-gap); */
-    /* padding-bottom: var(--padding-gap); */
     text-decoration: none;
     font-weight: 500;
     color: var(--title-text-color);
@@ -69,6 +68,7 @@
 
   .menu-nav.list {
     display: flex;
+    margin-left: 120px;
     gap: 40px;
   }
 
@@ -171,6 +171,10 @@
 
   /**-------FEATURES SECTION--------*/
 
+  .feature-section.section {
+    padding-bottom: 0;
+  }
+
   .features-list {
     display: flex;
     flex-wrap: wrap;
@@ -235,10 +239,6 @@
 
   /**-------------CUSTOMERS SECTION--------------*/
 
-  .container.customers-container {
-    padding: 0px auto;
-  }
-
   .customers-logos.list {
     gap: 72px 24px;
   }
@@ -282,12 +282,17 @@
 
   .footer-subscribe-box {
     margin-top: 72px;
+    margin-bottom: 0;
     width: 453px;
   }
 
   .footer-first-part {
     display: flex;
     gap: 24px;
+  }
+
+  .footer-subscribe-box {
+    margin-top: 0;
   }
 
   .footer-form {
