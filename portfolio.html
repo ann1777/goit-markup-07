@@ -14,19 +14,22 @@
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
     <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/mobile.css">
+    <link rel="stylesheet" href="./css/tablet.css">
+    <link rel="stylesheet" href="./css/desktop.css">
 </head>
 
 <body>
     <!-- Top Line section -->
     <header class="header">
-        <div class="container">
+        <div class="header-container">
             <nav class="page-nav">
                 <a href="./index.html" class="logo header"><span class="logo-web">WEB</span><span
                         class="logo-studio">STUDIO</span></a>
                 <ul class="menu-nav list">
-                    <li class="item"><a href="./index.html" class="nav link">Studio</a></li>
-                    <li class="item"><a href="./portfolio.html" class="nav active link">Portfolio</a></li>
-                    <li class="item"><a href="#contacts" class="nav link">Contacts</a></li>
+                    <li class="item"><a href="./index.html" class="nav-link link">Studio</a></li>
+                    <li class="item"><a href="./portfolio.html" class="nav-link active link">Portfolio</a></li>
+                    <li class="item"><a href="#contacts" class="nav-link link">Contacts</a></li>
                 </ul>
             </nav>
             <address class="contacts">
@@ -187,56 +190,61 @@
     <!-- Footer container  -->
     <footer class="footer">
         <div class="container footer-container">
-            <div class="footer-logo-box">
-                <a href="./index.html" class="logo"><span class="logo-web">WEB</span><span
-                        class="white-logo-studio">STUDIO</span></a>
-                <p class="footer-content">Increase the flow of customers and sales for your business with
-                    digital marketing & growth solutions.</p>
+            <div class="footer-first-part">
+                <div class="footer-logo-box">
+                    <a href="./index.html" class="logo"><span class="logo-web">WEB</span><span
+                            class="white-logo-studio">STUDIO</span></a>
+                    <p class="footer-content content">Increase the flow of customers and sales for your business with
+                        digital marketing & growth solutions.</p>
+                </div>
+                <div class="footer-media-box">
+                    <p class="footer-media-header">Social media</p>
+                    <ul class="footer-media-icns">
+                        <li class="footer-item">
+                            <a href="#" class="footer-media insta-icn">
+                                <svg class="footer-icon" width="24" height="24">
+                                    <use href="./img/symbol-defs.svg#icon-insta-icn"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="footer-item">
+                            <a href="#" class="footer-media tw-icon">
+                                <svg class="media-icon" width="24" height="24">
+                                    <use href="./img/symbol-defs.svg#icon-twitter-icn"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="footer-item">
+                            <a href="#" class="footer-media fb-icon">
+                                <svg class="media-icon" width="24" height="24">
+                                    <use href="./img/symbol-defs.svg#icon-facebook-icn"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="footer-item">
+                            <a href="#" class="footer-media lkd-icon">
+                                <svg class="media-icon" width="24" height="24">
+                                    <use href="./img/symbol-defs.svg#icon-linkedin-icn"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-            <div class="footer-media-box">
-                <p class="footer-media-header">Social media</p>
-                <ul class="footer-media-icns">
-                    <li class="footer-item">
-                        <a href="#" class="footer-media insta-icon">
-                            <svg class="footer-icon" width="24" height="24">
-                                <use href="./img/symbol-defs.svg#icon-insta-icn"></use>
+            <div class="footer-second-part">
+                <div class="footer-subscribe-box">
+                    <p class="footer-subscribe-header">Subscribe</p>
+                    <form class="footer-form">
+                        <input class="footer-form-input" placeholder="E-mail" type="text">
+                        <button class="footer-form-button" type="submit">Subscribe
+                            <svg class="footer-form-icon" width="24" height="24">
+                                <use href="./img/symbol-defs.svg#icn-send-btn"></use>
                             </svg>
-                        </a>
-                    </li>
-                    <li class="footer-item">
-                        <a href="#" class="footer-media tw-icon">
-                            <svg class="media-icon" width="24" height="24">
-                                <use href="./img/symbol-defs.svg#icon-twitter-icn"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="footer-item">
-                        <a href="#" class="footer-media fb-icon">
-                            <svg class="media-icon" width="24" height="24">
-                                <use href="./img/symbol-defs.svg#icon-facebook-icn"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="footer-item">
-                        <a href="#" class="footer-media lkd-icon">
-                            <svg class="media-icon" width="24" height="24">
-                                <use href="./img/symbol-defs.svg#icon-linkedin-icn"></use>
-                            </svg>
-                        </a>
-                    </li>
-                </ul>
+                        </button>
+                    </form>
+                </div>
             </div>
-            <div class="footer-subscribe-box">
-                <p class="footer-subscribe-header">Subscribe</p>
-                <form class="footer-form">
-                    <input class="footer-form-input" placeholder="E-mail" type="text">
-                    <button class="footer-form-button" type="submit">Subscribe<svg class="footer-form-icon" width="24"
-                            height="24">
-                            <use href="./img/symbol-defs.svg#icon-send-btn"></use>
-                        </svg>
-                    </button>
-                </form>
-            </div>
+        </div>
         </div>
     </footer>
 </body>

@@ -198,14 +198,11 @@
 
   section.team {
     background-color: var(--white-background-color);
+    padding: auto;
   }
 
   .team-container {
-    padding: 96px 0px 96px 108px;
-  }
-
-  .team-container .title {
-    margin-right: 64px;
+    padding: 96px 0px;
   }
 
   .team-cards {
@@ -219,6 +216,8 @@
 
   .team-item {
     width: 264px;
+    padding: auto;
+    align-items: center;
   }
 
   .team-item .secondtitle {
