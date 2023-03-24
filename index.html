@@ -46,71 +46,73 @@
                     <use href="./img/symbol-defs.svg#icn-menu-mob-open"></use>
                 </svg>
             </button>
-        </div>
 
-        <div class="mob-menu is-hidden" data-menu>
-            <button type="button" class="mob-menu-close-btn" data-menu-close>
-                <svg class="mob-menu-close-icon" width="20" height="20">
-                    <use href="./img/symbol-defs.svg#icn-modal-close"></use>
-                </svg>
-            </button>
-
-            <div class="mob-nav-menu-wrap">
-                <nav clacc="mob-nav-menu">
-                    <ul class="mob-menu-list">
-                        <li><a href="./index.html" class="mob-menu-item link">Studio</a></li>
-                        <li><a href="./portfolio.html" class="mob-menu-item link">Portfolio</a></li>
-                        <li><a href="./index.html" class="mob-menu-item link active">Contacts</a></li>
+            <div class="mob-menu is-hidden" data-menu>
+                <button type="button" class="mob-menu-close-btn" data-menu-close>
+                    <svg class="mob-menu-close-icon" width="8" height="8">
+                        <use href="./img/symbol-defs.svg#icn-modal-close"></use>
+                    </svg>
+                </button>
+                <div class="mob-menu-display">
+                    <ul class=" mob-menu-list">
+                        <li class="item">
+                            <a href="./index.html" class="mob-menu-item link">Studio</a>
+                        </li>
+                        <li class="item">
+                            <a href="./portfolio.html" class="mob-menu-item link">Portfolio</a>
+                        </li>
+                        <li class="item">
+                            <a href="./index.html" class="mob-menu-item link active">Contacts</a>
+                        </li>
                     </ul>
-                </nav>
-
-                <div class="mob-menu-contacts">
-                    <address class="mob-menu-address">
-                        <ul class="mob-menu-address-list">
-                            <li class="mob-tel">
-                                <a href="tel:+11(000)1111111" class="mob-menu-tel active link">+11(000)1111111</a>
+                    <div class="mob-menu-bottom">
+                        <address>
+                            <ul class="mob-menu-address-list">
+                                <li class="mob-tel">
+                                    <a href="tel:+11(000)1111111" class="mob-menu-tel active link">+11 (000)
+                                        111-11-11</a>
+                                </li>
+                                <li class="mob-mail">
+                                    <a href="mailto:info@devstudio.com"
+                                        class="mob-menu-mail link">info@devstudio.com</a>
+                                </li>
+                            </ul>
+                        </address>
+                        <ul class="mob-menu-media-items list">
+                            <li class="mob-menu-media-item">
+                                <a href="#" class="mob-menu-media-link link">
+                                    <svg class="mob-menu-icn" width="16" height="16">
+                                        <use href="./img/symbol-defs.svg#icon-insta-icn"></use>
+                                    </svg>
+                                </a>
                             </li>
-                            <li class="mob-mail">
-                                <a href="mailto:info@devstudio.com" class="mob-menu-mail link">info@devstudio.com</a>
+                            <li class="mob-menu-media-item">
+                                <a href="#" class="mob-menu-media-link link">
+                                    <svg class="mob-menu-icn" width="16" height="16">
+                                        <use href="./img/symbol-defs.svg#icon-twitter-icn"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="mob-menu-media-item">
+                                <a href="#" class="mob-menu-media-link link">
+                                    <svg class="mob-menu-icn" width="16" height="16">
+                                        <use href="./img/symbol-defs.svg#icon-facebook-icn"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="mob-menu-media-item">
+                                <a href="#" class="mob-menu-media-link link">
+                                    <svg class="mob-menu-icn" width="16" height="16">
+                                        <use href="./img/symbol-defs.svg#icon-linkedin-icn"></use>
+                                    </svg>
+                                </a>
                             </li>
                         </ul>
-                    </address>
-
-                    <ul class="mob-menu-media-items list">
-                        <li class="mob-menu-media-item">
-                            <a href="#" class="mob-menu-media-link link">
-                                <svg class="mob-menu-icn" width="16" height="16">
-                                    <use href="./img/symbol-defs.svg#icon-insta-icn"></use>
-                                </svg>
-                            </a>
-                        </li>
-                        <li class="mob-menu-media-item">
-                            <a href="#" class="mob-menu-media-link link">
-                                <svg class="mob-menu-icn" width="16" height="16">
-                                    <use href="./img/symbol-defs.svg#icon-twitter-icn"></use>
-                                </svg>
-                            </a>
-                        </li>
-                        <li class="mob-menu-media-item">
-                            <a href="#" class="mob-menu-media-link link">
-                                <svg class="mob-menu-icn" width="16" height="16">
-                                    <use href="./img/symbol-defs.svg#icon-facebook-icn"></use>
-                                </svg>
-                            </a>
-                        </li>
-                        <li class="mob-menu-media-item">
-                            <a href="#" class="mob-menu-media-link link">
-                                <svg class="mob-menu-icn" width="16" height="16">
-                                    <use href="./img/symbol-defs.svg#icon-linkedin-icn"></use>
-                                </svg>
-                            </a>
-                        </li>
-                    </ul>
+                    </div>
                 </div>
             </div>
         </div>
-
-        <!--</div> -->
+        </div>
     </header>
 
     <main>
@@ -535,42 +537,47 @@
             </button>
             <p class="modal-title">Leave your contacts and we will call you back</p>
             <form class="modal-form">
-                <label class="modal-field" for="name"></label>
-                <span class="input-text">Name</span>
-                <span class="input-wrap">
-                    <input class="modal-input" id="name" required>
-                    <svg class="modal-icon" width="22" height="24">
-                        <use href="./img/symbol-defs.svg#icn-modal-person"></use>
-                    </svg>
-                </span>
-                </label>
-
-                <label class="modal-field" for="phone"></label>
-                <span class="input-text">Phone</span>
-                <div class="input-wrap">
-                    <input class="modal-input" id="phone">
-                    <svg class="modal-icon" width="18" height="24">
-                        <use href="./img/symbol-defs.svg#icn-modal-phone"></use>
-                    </svg>
+                <div class="form-container">
+                    <label class="modal-field" for="name"></label>
+                    <span class="input-text">Name</span>
+                    <span class="input-wrap">
+                        <input class="modal-input" id="name" required>
+                        <svg class="modal-icon" width="22" height="24">
+                            <use href="./img/symbol-defs.svg#icn-modal-person"></use>
+                        </svg>
+                    </span>
+                    </label>
                 </div>
-                </label>
+                <div class="form-container">
+                    <label class="modal-field" for="phone"></label>
+                    <span class="input-text">Phone</span>
+                    <div class="input-wrap">
+                        <input class="modal-input" id="phone">
+                        <svg class="modal-icon" width="18" height="24">
+                            <use href="./img/symbol-defs.svg#icn-modal-phone"></use>
+                        </svg>
+                    </div>
+                    </label>
+                </div>
+                <div class="form-container">
 
-
-                <label class="modal-field" for="email"></label>
-                <span class="input-text">Email</span>
-                <div class="input-wrap">
-                    <input type="email" class="modal-input" name="email" id="email" required>
-                    <svg class="modal-icon" width="18" height="24">
-                        <use href="./img/symbol-defs.svg#icn-modal-email"></use>
-                    </svg>
+                    <label class="modal-field" for="email"></label>
+                    <span class="input-text">Email</span>
+                    <div class="input-wrap">
+                        <input type="email" class="modal-input" name="email" id="email" required>
+                        <svg class="modal-icon" width="18" height="24">
+                            <use href="./img/symbol-defs.svg#icn-modal-email"></use>
+                        </svg>
+                    </div>
+                </div>
+                <div class="form-textarea-container">
+                    <div class="textarea-modal">
+                        <label class="input-text" for="user-text">Comment</label>
+                        <textarea class="textarea" id="user-text" placeholder="Text input"></textarea>
+                    </div>
                 </div>
 
-                <div class="textarea-modal">
-                    <label class="input-text" for="user-text">Comment</label>
-                    <textarea class="textarea" id="user-text" placeholder="Text input"></textarea>
-                </div>
-
-                <div class="modal-field">
+                <div class="form-policy-container">
                     <input class="input-check hidden" id="input-check" name="user-check" type="checkbox">
                     <label class="check-text" for="input-check">
                         <span>
@@ -581,6 +588,7 @@
                         I accept the terms and conditions of the<a class="form-check-link" href="">Privacy Policy</a>
                     </label>
                 </div>
+
                 <button type="submit" class="submit-modal-btn">Send</button>
             </form>
         </div>
