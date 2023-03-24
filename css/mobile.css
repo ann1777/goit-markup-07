@@ -940,6 +940,11 @@ a.active.link:hover {
     background-color: var(--white-background-color);
   }
 
+.team-items {
+  padding: 32px 0;
+  text-align: center;
+}
+
 .team-item {
   margin: auto;
   background-color: var(--white-background-color);

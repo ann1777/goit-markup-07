@@ -563,7 +563,7 @@
   }
 
   .customers-card {
-    width: calc((100% - 120px) / 6);
+    /* width: calc((100% - 120px) / 6); */
     flex-basis: calc((100% - 24px) / 6);
 
     height: 88px;
