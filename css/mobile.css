@@ -1049,7 +1049,7 @@ a.active.link:hover {
 
 .customers-container {
   padding: 96px 16px;
-  outline: 1px solid blue;
+  /* outline: 1px solid blue; */
 }
 
 .customers-logos {
@@ -1057,7 +1057,7 @@ a.active.link:hover {
   flex-wrap: wrap;
   justify-content: center;
   gap: 72px 16px;
-  outline: 1px solid red;
+  /* outline: 1px solid red; */
 }
 
 .customers-card {

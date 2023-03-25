@@ -253,7 +253,7 @@
     width: 552px;
     padding: 0px;
     gap: 72px 24px;
-    outline: 1px solid red;
+    /* outline: 1px solid red; */
   }
 
   .customers-card {
