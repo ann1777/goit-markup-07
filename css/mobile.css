@@ -1120,11 +1120,20 @@ svg.customers-icon {
 
 .footer-container {
   display: flex;
-  align-items: baseline;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap:wrap;
+  gap: 72px;
 }
 
 .footer-first-part {
   width: 268px;
+}
+
+.footer-logo-box,
+.footer-media-box {
+  padding-bottom: 72px;
 }
 
 .footer-content {
@@ -1144,7 +1153,13 @@ svg.customers-icon {
   text-align: center;
 }
 
-.footer-media-header {
+.footer-media-box {
+  padding-bottom: 72px;
+  margin-left: 0px;
+}
+
+.footer-media-header,
+.footer-subscribe-header {
   margin-bottom: 16px;
   font-weight: 500;
   line-height: var(--footer-content-line-height);
@@ -1152,14 +1167,13 @@ svg.customers-icon {
   color: var(--primary-white-color);
 }
 
-.footer-container {
+.footer-media-icns {
   display: flex;
-  flex-wrap: wrap;
-  gap: 72px;
   justify-content: center;
-  flex-direction: column;
-  align-items: center;
+  text-align: center;
+  gap: var(--footer-media-gap);
 }
+
 
 .footer-second-part {
   width: 100%;
@@ -1179,13 +1193,6 @@ svg.customers-icon {
   padding-bottom: 16px;
 }
 
-.footer-media-icns {
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  gap: var(--footer-media-gap);
-}
-
 .footer-media {
   display: flex;
   align-items: center;
@@ -1198,13 +1205,17 @@ svg.customers-icon {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.footer-media-header,
-.footer-subscribe-header {
-  margin-bottom: 16px;
-  font-weight: 500;
-  line-height: var(--footer-content-line-height);
-  letter-spacing: 0.02em;
-  color: var(--primary-white-color);
+.footer-media-icons {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  gap: var(--footer-media-gap);
+}
+
+
+svg.footer-icon {
+  width: 16px;
+  height: 16px;
 }
 
 .footer .footer-icon {
@@ -1215,13 +1226,24 @@ svg.customers-icon {
   background-color: var(--success-color);
 }
 
+.footer-second-part {
+  width: 100%;
+}
+
+.footer-subscribe-box {
+  width: 100%;
+}
+
+.footer-subscribe {
+  margin-left: 80px;
+}
+
 .footer-form {
   display: flex;
   align-items: center;
   flex-direction: column;
   justify-content: space-between;
   width: 100%;
-  padding: 96px, 15px;
 }
 
 .footer-form-input {
@@ -1244,14 +1266,6 @@ svg.customers-icon {
   line-height: 2;
   letter-spacing: 0.04em;
   color: rgba(255, 255, 255, 0.6);
-}
-
-.footer-subscribe-box {
-  width: 100%;
-}
-
-.footer-subscribe {
-  margin-left: 80px;
 }
 
 .footer-form-button {
@@ -1279,19 +1293,9 @@ svg.customers-icon {
   background-color: var(--btn-active-color);
 }
 
-.footer-form-icon {
-  margin-left: 16px;
-}
-
-svg.footer-form-icon {
-  width: 24px;
-  height: 24px;
-  margin-left: 16px;
-}
-
 @media screen and (min-width: 768px) {
   .container {
-    width: 768px;
+    width: 100%;
     padding: 0 15px;
     margin: 0 auto;
   }

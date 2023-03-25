@@ -558,12 +558,9 @@
     flex-direction: row;
     padding: 120px 0;
     width: 1158px;
-    /* padding-top: 120px; */
-    /* padding-bottom: 120px; */
   }
 
   .customers-card {
-    /* width: calc((100% - 120px) / 6); */
     flex-basis: calc((100% - 24px) / 6);
 
     height: 88px;
@@ -571,7 +568,7 @@
 
   /**------------------FOOTER SECTION--------------- */
   .footer {
-    padding: 100px 0px;
+    padding: 100px 0px 0px 0px;
     width: 100%;
   }
 
