@@ -203,7 +203,7 @@
 
   .team-container {
     width: 582px;
-    padding: 96px 0px;
+    /* padding: 96px 0px; */
   }
 
   .team-cards {
@@ -241,21 +241,24 @@
 
   /**-------------CUSTOMERS SECTION--------------*/
 
+  .customers-container.container {
+    padding-bottom: 96px;
+    padding-top: 96px;
+  }
+
+  ul.customers-logos.list {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    width: 552px;
+    padding: 0px;
+    gap: 72px 24px;
+    outline: 1px solid red;
+  }
+
   .customers-card {
     width: 168px;
-    height: 88px;
     flex-basis: auto;
-  }
-
-  .customers .customers-container {
-    padding: 96px 108px;
-  }
-
-  .customers-list.list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 72px 24px;
   }
 
   /**------------------FOOTER SECTION--------------- */
