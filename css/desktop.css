@@ -76,8 +76,8 @@
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 
-  address.contacts {
-    margin-left: 332px;
+  .contacts {
+    margin-left: auto;
   }
 
   .contacts-nav {
@@ -121,6 +121,8 @@
   .contacts-nav .link {
     display: block;
     color: var(--text-color);
+    font-size: var(--logo-font-size);
+    font-weight: 400;
     text-decoration: none;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
@@ -480,7 +482,8 @@
     width: 264px;
     height: 112px;
     margin-bottom: 8px;
-    background: var(--icons-bg-color);
+
+    background: var(--white-background-color);
     border-radius: 4px;
   }
 

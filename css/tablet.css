@@ -177,7 +177,7 @@
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    gap: 72px 24px;
+    gap: 0px 24px;
   }
 
   .feature-item {
@@ -203,7 +203,7 @@
 
   .team-container {
     width: 582px;
-    /* padding: 96px 0px; */
+    padding: 96px 0px;
   }
 
   .team-cards {

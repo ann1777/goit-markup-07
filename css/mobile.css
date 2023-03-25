@@ -1,3 +1,4 @@
+
 :root {
   --primary-text-color: rdba(0, 0, 0, 0.8);
   /**Slate - Body Text */
@@ -58,8 +59,7 @@
   --text-line-height: 1.2;
   --footer-content-line-height: 1.5;
   --feature-widthtext-line-height: 1.5;
-  --header-logo-line-height: 1.33;
-  --footer-logo-line-height: 1.17;
+  --header-logo-line-height: 1.17;
 
   --page-width: 1440px;
   --content-width: 1188px;
@@ -263,6 +263,7 @@ a.active.link:hover {
 
 .white-logo-studio {
   color: var(--white-title-text-color);
+  text-align: center;
 }
 
 .menu-nav.list,
@@ -566,7 +567,7 @@ a.active.link:hover {
   background-size: cover;
   margin: 0 auto;
   max-width: var(--page-width);
-  padding: var(--hero-container-gap) 0;
+  padding: 112px 0px;
   width: 100%;
   background-image: linear-gradient(
       rgba(46, 47, 66, 0.7),
@@ -641,7 +642,7 @@ a.active.link:hover {
   top: 50%;
   left: 50%;
 
-  width: 408px;
+  width: 392px;
   min-height: 586px;
   padding: 24px;
   background: var(--modal-bg-color);
@@ -656,6 +657,10 @@ a.active.link:hover {
 
 .modal-close {
   position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   top: 24px;
   right: 24px;
   height: 24px;
@@ -940,14 +945,19 @@ a.active.link:hover {
     background-color: var(--white-background-color);
   }
 
-.team-items {
-  padding: 32px 0;
-  text-align: center;
+.team-item {
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+  padding: 0px;
+  gap: 72px;
 }
 
-.team-item {
+.team-items {
   margin: auto;
-  background-color: var(--white-background-color);
+  padding: 32px 0;
+  text-align: center;
+  background-color: var(--primary-white-color);
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
   border-radius: 0px 0px 4px 4px;
@@ -1116,16 +1126,18 @@ svg.customers-icon {
   justify-content: center;
   align-items: center;
   flex-wrap:wrap;
-  gap: 72px;
 }
 
 .footer-first-part {
   width: 268px;
 }
 
-.footer-logo-box,
-.footer-media-box {
+.footer-logo-box {
   padding-bottom: 72px;
+}
+
+.footer-logo-box .logo {
+  line-height: var(--header-logo-line-height);
 }
 
 .footer-content {
@@ -1135,14 +1147,6 @@ svg.customers-icon {
   line-height: var(--footer-content-line-height);
 
   color: var(--white-text-color);
-}
-
-.logo-web-footer {
-  color: var(--white-title-text-color);
-}
-
-.white-logo-studio {
-  text-align: center;
 }
 
 .footer-media-box {
@@ -1206,8 +1210,8 @@ svg.customers-icon {
 
 
 svg.footer-icon {
-  width: 16px;
-  height: 16px;
+  width: 24px;
+  height: 24px;
 }
 
 .footer .footer-icon {
