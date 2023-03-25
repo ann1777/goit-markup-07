@@ -1289,6 +1289,47 @@ svg.footer-icon {
   background-color: var(--btn-active-color);
 }
 
+
+  /**-----PORTFOLIO PAGE------*/
+.card-item {
+  border-top: none;
+  background: var(--primary-white-color);
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.rows { 
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+}
+
+.card-box {
+  padding: 32px 16px;
+  border: 1px solid var(--white-text-color);
+  border-top: none;
+}
+
+.card-item {
+  width: 100%;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+.portfolio .container {
+  margin: 0px;
+  padding: 16px;
+}
+
+.card-title {
+  /* h3.content.name { */
+  margin-bottom: 8px;
+  font-family: var(--primary-font-family);
+  font-size: var(--header3-font-size);
+  font-weight: var(--header3-font-weight);
+  color: var(--title-text-color);
+}
+
+
 @media screen and (min-width: 768px) {
   .container {
     width: 100%;
@@ -1340,4 +1381,5 @@ svg.footer-icon {
     width: 392px;
     height: 586px;
   }
+
 }
