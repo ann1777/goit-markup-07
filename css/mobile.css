@@ -226,7 +226,7 @@ body {
 
 /**--------TOP LINE SECTION-------*/
 .header {
-  padding: 24px 16px;
+  padding: 24px 0;
   border-bottom: 1px solid var(--white-text-color);
 }
 
@@ -263,6 +263,7 @@ body {
 .white-logo-studio {
   color: var(--white-title-text-color);
   text-align: center;
+  text-decoration: none;
 }
 
 .menu-nav.list,
@@ -381,8 +382,6 @@ body {
 }
 
 .mob-menu-address-list .mob-menu-tel {
-  /*  margin-top: 284px; */
-  /*  margin-bottom: 40px; */
   font-weight: var(--header1-font-weight);
   font-size: var(--header2-font-size);
   line-height: 1.1;
@@ -564,14 +563,14 @@ body {
   background-position: center;
   background-size: cover;
   margin: 0 auto;
-  max-width: var(--page-width);
+  /* width: var(--page-width); */
   padding: 112px 0px;
   width: 100%;
   background-image: linear-gradient(
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(".././img/hero-mobile@2x-min.jpg");
+    url(".././img/hero-bg-img.jpg");
   background-repeat: no-repeat;
   overflow-y: hidden;
 }
@@ -710,7 +709,7 @@ body {
 
 .form-container {
   position: relative;
-  width: 360px;
+  max-width: 360px;
   margin-bottom: 8px;
 }
 
@@ -1111,7 +1110,8 @@ svg.customers-icon {
 
 /**------------------FOOTER SECTION--------------- */
 .footer {
-  padding: 100px 15px;
+  padding-top: 96px;
+  padding-bottom: 96px;
   text-align: center;
   background-color: var(--dark-background-color);
 }
@@ -1122,6 +1122,7 @@ svg.customers-icon {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  gap: 72px;
 }
 
 .footer-first-part {
@@ -1139,6 +1140,7 @@ svg.customers-icon {
 .footer-content {
   text-align: left;
   width: var(--footer-content-width);
+  max-width: calc(100% - 16px);
   margin-top: 16px;
   line-height: var(--footer-content-line-height);
 
@@ -1146,7 +1148,6 @@ svg.customers-icon {
 }
 
 .footer-media-box {
-  padding-bottom: 72px;
   margin-left: 0px;
 }
 
@@ -1177,11 +1178,6 @@ svg.customers-icon {
 .footer-form {
   display: flex;
   align-items: center;
-}
-
-.footer-form-input {
-  width: 100%;
-  padding-bottom: 16px;
 }
 
 .footer-media {
@@ -1323,12 +1319,6 @@ section.portfolio {
   justify-content: center;
 }
 
-.container {
-  width: 100%;
-  padding: 0 15px;
-  margin: 0 auto;
-}
-
 .portfolio {
   padding-top: 48px;
   padding-bottom: 48px;
@@ -1435,28 +1425,94 @@ section.portfolio {
   color: var(--text-color);
 }
 
-@media screen and (min-width: 480px) {
-  .container {
-    width: 100%;
-    padding: 0 15px;
-    margin: 0 auto;
-    outline: 1px solid blue;
-  }
-
 @media screen and (min-width: 768px) {
-  .container {
-    width: 100%;
-    padding: 0 16px;
-    margin: 0 auto;
-  }
 
   /**--------HERO SECTION---------*/
 
+  .hero-img {
+  padding-top: 112px;
+  padding-bottom: 112px; 
+  margin: 0 auto; 
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(".././img/hero-mobile@2x-min.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  overflow-y: hidden;
+}
+
+
   .hero-msg {
-    margin: 0 auto 48px;
+    margin: 0 auto;
     max-width: 494px;
     font-size: 56px;
     line-height: 1.1;
     color: var(--primary-white-color);
   }
+
+  @media screen and (max-width: 479px) {
+  .container {
+    max-width: 428px;
+    width: 100%;
+    /* outline: 1px solid blue; */
+  }
+
+  .hero-img {
+    width: 100%;
+  }
+
+  .feature-item {
+    width: 396px;
+  }
+
+  .modal {
+    width: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
+  }
+
+  .footer > .container {
+    padding-top: 96px;
+    padding-bottom: 96px;
+  }
+
+  .footer-first-part {
+    max-width: 268px;
+  }
+
+  .footer-logo-box {
+    padding-bottom: 72px;
+  }
+
+  .footer-logo-box .logo {
+    line-height: var(--header-logo-line-height);
+  }
+
+  .footer-content {
+    text-align: left;
+    max-width: calc(100% - 16px);
+    margin-top: 16px;
+    line-height: var(--footer-content-line-height);
+
+    color: var(--white-text-color);
+  }
+
+  .footer-media-box {
+    padding-bottom: 72px;
+    margin-left: 0px;
+  }
+
+  .footer-content {
+    max-width:264px;
+    padding: 0 auto;
+    text-align: left;
+  }
+
+  .footer-form {
+    max-width: 100%;
+  }
+
 }
