@@ -318,9 +318,45 @@
   }
 
   /**-----PORTFOLIO PAGE----------*/
-  .card-item {
-    width: 100%;
+
+  .portfolio {
+    padding: 76px 0 96px;
+  }
+
+  .portfolio .container {
+    display: block;
     margin-left: 16px;
     margin-right: 16px;
+    width: 100%;
+    padding: 0px;
+  }
+
+  .portfolio .filter-buttons {
+    align-items: center;
+    justify-content: center;
+  }
+
+  .portfolio .card-item {
+    width: 356px;
+    margin: 0px;
+  }
+
+  .rows {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 48px 24px;
+  }
+  .portfolio .rows.list {
+    align-items: center;
+    justify-content: start;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 72px 24px;
+  }
+
+  .portfolio .card-box {
+    padding: 32px 0;
+    text-align: left;
   }
 }
