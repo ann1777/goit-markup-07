@@ -1274,6 +1274,10 @@ svg.footer-icon {
   background-color: var(--btn-active-color);
 }
 
+svg.footer-form-icon {
+  margin-left: 16px;
+}
+
 /**----------------PORTFOLIO HOVER---------------*/
 .portfolio-cardhover {
   position: relative;
