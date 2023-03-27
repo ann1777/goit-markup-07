@@ -238,7 +238,7 @@ body {
   text-decoration: none;
 }
 
-.logo-web {
+span.logo-web {
   font-family: var(--secondary-font-family);
   font-size: var(--logo-font-size);
   line-height: var(--header-logo-line-height);
@@ -249,7 +249,7 @@ body {
   color: var(--accent-text-color);
 }
 
-.logo-studio {
+span.logo-studio {
   font-weight: var(--logo-font-weight);
   font-family: var(--secondary-font-family);
   font-size: var(--logo-font-size);
