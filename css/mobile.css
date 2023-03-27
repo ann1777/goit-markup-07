@@ -875,10 +875,6 @@ body {
   color: var(--primary-white-color);
 }
 
-.footer-media:is(:hover, :focus) {
-  background-color: var(--success-color);
-}
-
 /**-------FEATURES SECTION--------*/
 
 .feature-section {
@@ -1108,23 +1104,24 @@ svg.customers-icon {
 
 /**------------------FOOTER SECTION--------------- */
 .footer {
-  padding-top: 96px;
-  padding-bottom: 96px;
-  text-align: center;
+  text-align: center; 
   background-color: var(--dark-background-color);
 }
 
 .footer-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 72px;
+  padding-top: 96px;
+  padding-bottom: 96px;
+}
+
+.footer-first-part,
+.footer-second-part {
+  max-width: 268px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .footer-first-part {
-  width: 268px;
+  margin-bottom: 72px;
 }
 
 .footer-logo-box {
@@ -1136,9 +1133,10 @@ svg.customers-icon {
 }
 
 .footer-content {
+  font-family: 'Roboto';
+  font-weight: 400;
   text-align: left;
-  width: var(--footer-content-width);
-  max-width: calc(100% - 16px);
+  width: 264px;
   margin-top: 16px;
   line-height: var(--footer-content-line-height);
 
@@ -1163,10 +1161,6 @@ svg.customers-icon {
   justify-content: center;
   text-align: center;
   gap: var(--footer-media-gap);
-}
-
-.footer-second-part {
-  width: 100%;
 }
 
 .footer-subscribe-header {
@@ -1194,6 +1188,8 @@ svg.customers-icon {
   display: flex;
   justify-content: center;
   text-align: center;
+  padding: 0px;
+  margin: 0px;
   gap: var(--footer-media-gap);
 }
 
@@ -1205,6 +1201,7 @@ svg.footer-icon {
 .footer .footer-icon {
   fill: var(--icons-fill-color);
 }
+
 
 .footer-media:is(:hover, :focus) {
   background-color: var(--success-color);
@@ -1472,6 +1469,8 @@ section.portfolio {
     margin: 0 auto;
   }
 
+
+
   .footer > .container {
     padding-top: 96px;
     padding-bottom: 96px;
@@ -1504,15 +1503,30 @@ section.portfolio {
   }
 
   .footer-content {
+    max-width: 264px;
+    text-align: left;
+    font-family: "Roboto";
+    font-weight: 400;
+    font-size: 16px;
+    line-height: calc(24 / 16);
+    letter-spacing: 0.02em;
+  }
+
+  .footer-content {
     max-width:264px;
     padding: 0 auto;
-    text-align: left;
+    text-align: center;
   }
 
   .footer-form {
     max-width: 100%;
   }
 
+}
+@media scree and (min-width 480px) {
+  .container {
+    max-width: 428px;
+  }
 }
 
 @media screen and (max-width 390px) {

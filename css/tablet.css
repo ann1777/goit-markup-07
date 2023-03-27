@@ -272,7 +272,7 @@
   .footer-container {
     justify-content: flex-start;
     align-items: baseline;
-    flex-direction: row;
+    flex-direction: column;
 
     padding-left: 108px;
     gap: 24px;
@@ -288,9 +288,12 @@
     width: 453px;
   }
 
-  .footer-first-part {
+  .footer-first-part,
+  .footer-second-part {
     display: flex;
     gap: 24px;
+    margin-left: 0px;
+    margin-bottom: 0px;
   }
 
   .footer-subscribe-box {

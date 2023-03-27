@@ -559,21 +559,20 @@
 
   /**------------------FOOTER SECTION--------------- */
   .footer {
+    /* display: flex; */
     padding: 100px 0px;
-    width: 100%;
+    /*  width: 100%; */
   }
 
   .container.footer-container {
     flex-wrap: nowrap;
     align-items: baseline;
-    display: inline-flex;
-    width: 1158px;
-    gap: 0;
-  }
-
-  .footer-flex {
-    display: inline-flex;
+    flex-direction: row;
     margin-bottom: 0;
+    padding: 0px;
+    width: 1158px;
+    padding-left: 0px;
+    gap: 0;
   }
 
   .footer-logo-box {
@@ -584,10 +583,12 @@
   }
 
   .footer-content {
+    max-width: 264px;
+    text-align: left;
     font-family: "Roboto";
     font-weight: 400;
     font-size: 16px;
-    line-height: 24px;
+    line-height: calc(24 / 16);
     letter-spacing: 0.02em;
   }
 
