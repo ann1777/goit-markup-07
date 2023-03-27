@@ -1,4 +1,6 @@
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2) and (min-width: 768px),
+  screen and (min-width: 1200px) and (min-resolution: 192dpi) and (min-width: 768px),
+  screen and (min-width: 1200px) and (min-resolution: 2dppx) and (min-width: 768px) {
   .hero-img {
     margin: 0 auto;
     max-width: var(--page-width);
@@ -13,7 +15,8 @@
       ),
       url(".././img/hero-desktop@2x-min.jpg");
   }
-
+}
+@media screen and (min-width: 1200px) {
   .container {
     max-width: 1158px;
   }

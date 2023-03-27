@@ -936,12 +936,20 @@ span.white-logo-studio {
   background-color: var(--white-background-color);
 }
 
-.team-item {
+.team-list {
+  display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
-  align-items: center;
-  margin: auto;
-  padding: 0px;
   gap: 72px;
+}
+
+.team-item {
+  /* flex-direction: column; */
+  /* align-items: center; */
+  width: 264px;
+  margin: 0 auto;
+  /* padding: 0px; */
+  /* gap: 72px; */
   background-color: var(--primary-white-color);
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
@@ -969,12 +977,6 @@ span.white-logo-studio {
 .teamplayers-position {
   line-height: 1.5;
   color: var(--text-color);
-}
-
-.team-list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: var(--items-gap);
 }
 
 .team-list picture {
@@ -1439,7 +1441,7 @@ section.portfolio {
   color: var(--text-color);
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (man-width: 767px) {
 
   /**--------HERO SECTION---------*/
 
@@ -1467,7 +1469,7 @@ section.portfolio {
     color: var(--primary-white-color);
   }
 
-  @media screen and (max-width: 479px) {
+  @media screen and (mix-width: 480px) {
   .container {
     max-width: 428px;
     width: 100%;
@@ -1541,11 +1543,6 @@ section.portfolio {
     max-width: 100%;
   }
 
-}
-@media scree and (min-width 480px) {
-  .container {
-    max-width: 428px;
-  }
 }
 
 @media screen and (max-width 390px) {
