@@ -160,8 +160,8 @@
   /**----HERO SECTION-------*/
 
   .hero-msg {
-    margin-bottom: 40px;
-    font-size: 56px;
+    margin-bottom: 48px;
+    font-size: var(--header1-font-size);
     max-width: 496px;
   }
 
