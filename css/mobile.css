@@ -1492,7 +1492,7 @@ section.portfolio {
   }
 
   .feature-item {
-    width: 396px;
+    max-width: 396px;
   }
 
   .modal {
